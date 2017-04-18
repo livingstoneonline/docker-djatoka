@@ -1,0 +1,10 @@
+#!/bin/sh
+# Remove packages
+apt-get autoclean
+apt-get --purge -y autoremove
+# Remove files.
+rm -rf /tmp/* /var/tmp/*
+rm -rf /var/lib/apt/lists/*
+rm -fr /root/.cache/*
+echo '' > /root/.bash_history
+

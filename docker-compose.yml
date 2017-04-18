@@ -1,0 +1,10 @@
+version: "2"
+services:
+  djatoka:
+    build: .
+    container_name: djatoka
+    image: livingstoneonline/djatoka
+    environment:
+      - TOMCAT_ADMIN_PASSWORD=password
+    ports:
+      - "8080"
